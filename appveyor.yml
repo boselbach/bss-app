@@ -1,0 +1,23 @@
+version: 1.0.{build}
+image: Visual Studio 2017
+build_script:
+- cmd: npm install
+artifacts:
+- path: /
+  name: code
+
+for:
+
+# QA
+-
+  branches:
+    only:
+      - master
+
+  deploy:
+  - provider: AzureAppServiceZipDeploy
+    website: bss-app
+    username: $bss-app
+    password:
+      secure: xBhwiSnJe5Q9hLCRGt0k9SSaSxZ9YYqB7kCXzDgEjo1MkQgDjxnPAKbAgN42
+    artifact: code.zip
