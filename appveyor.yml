@@ -6,18 +6,16 @@ artifacts:
 - path: /
   name: code
 
-for:
+# for:
 
-# QA
--
-  branches:
-    only:
-      - master
+# # QA
+# -
+#   branches:
+#     only:
+#       - master
 
-  deploy:
-  - provider: AzureAppServiceZipDeploy
-    website: bss-app
-    username: $bss-app
-    password:
-      secure: 8zDkDoJQKdgwVl9/R9NOSTk4xcwwO3oA8yUDj80wdVsHS0kOBLqKmP1Q2pqInof0+FMZsqZgo9OYpaymU50Ynw==
-    artifact: code.zip
+deploy:
+  - provider: Environment
+    name: test
+    on:
+      branch: master
