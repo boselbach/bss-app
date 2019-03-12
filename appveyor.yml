@@ -1,21 +1,15 @@
 version: 1.0.{build}
 image: Visual Studio 2017
 build_script:
-- cmd: npm install
+- sh: >-
+    npm install
+
+    console.log("I am getting printed")
 artifacts:
 - path: /
   name: code
-
-# for:
-
-# # QA
-# -
-#   branches:
-#     only:
-#       - master
-
 deploy:
-  - provider: Environment
-    name: test
-    on:
-      branch: master
+- provider: Environment
+  name: test
+  on:
+    branch: master
