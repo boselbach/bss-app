@@ -19,5 +19,5 @@ for:
     website: bss-app
     username: $bss-app
     password:
-      secure: xBhwiSnJe5Q9hLCRGt0k9SSaSxZ9YYqB7kCXzDgEjo1MkQgDjxnPAKbAgN42
+      secure: 8zDkDoJQKdgwVl9/R9NOSTk4xcwwO3oA8yUDj80wdVsHS0kOBLqKmP1Q2pqInof0+FMZsqZgo9OYpaymU50Ynw==
     artifact: code.zip
