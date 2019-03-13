@@ -1,7 +1,7 @@
 version: 1.0.{build}
 image: Visual Studio 2017
 build_script:
-- sh: >-
+- cmd: >-
     npm install
 
     console.log("I am getting printed")
