@@ -4,7 +4,6 @@ build_script:
 - cmd: >-
     npm install
 
-    console.log("I am getting printed")
 artifacts:
 - path: /
   name: code
