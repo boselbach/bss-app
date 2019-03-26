@@ -13,6 +13,6 @@ build_script:
 deploy:
 - provider: Environment
   name: test
-  artifacts: code.zip
+  artifacts: code
   on:
     branch: master
