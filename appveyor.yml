@@ -13,7 +13,7 @@ deploy:
 - provider: Environment
   name: test
   artifacts:
-   - path: /
+  - path: /
   
   on:
     branch: master
