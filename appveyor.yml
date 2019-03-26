@@ -1,11 +1,11 @@
 version: 1.0.{build}
 image: Visual Studio 2017
 build_script:
- - echo %appveyor_build_version%
- - type code.zip
+#  - echo %appveyor_build_version%
+#  - type code.zip
  - cmd: >-
     npm install
- - echo %appveyor_build_version%  
+#  - echo %appveyor_build_version%  
 # artifacts:
 # - path: /deploy
 #   name: code
@@ -13,6 +13,6 @@ build_script:
 deploy:
 - provider: Environment
   name: test
-  artifact: code.zip
+  artifacts: code.zip
   on:
     branch: master
