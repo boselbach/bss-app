@@ -5,9 +5,9 @@ build_script:
     npm install
 
 artifacts:
-- path: /
+# - path: /
   name: code
-  
+
 deploy:
 - provider: Environment
   name: test
