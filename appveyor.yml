@@ -12,7 +12,8 @@ build_script:
 deploy:
 - provider: Environment
   name: test
-  artifact: code
+  artifacts:
+   - path: /
   
   on:
     branch: master
