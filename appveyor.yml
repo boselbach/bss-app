@@ -3,13 +3,15 @@ image: Visual Studio 2017
 build_script:
 - cmd: >-
     npm install
+    echo %appveyor_build_version%
 
-artifacts:
-- path: /deploy
-  name: code
+# artifacts:
+# - path: /deploy
+#   name: code
 
 deploy:
 - provider: Environment
   name: test
+   artifact: code.zip
   on:
     branch: master
