@@ -5,7 +5,7 @@ build_script:
     npm install
 
 artifacts:
-- path: code.zip
+- path: /deploy
   name: code
 
 deploy:
