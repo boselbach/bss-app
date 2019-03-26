@@ -4,9 +4,10 @@ build_script:
 - cmd: >-
     npm install
 
-# artifacts:
-# - path: /
-#   name: code
+artifacts:
+- path: /
+  name: code
+  
 deploy:
 - provider: Environment
   name: test
