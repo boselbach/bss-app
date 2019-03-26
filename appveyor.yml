@@ -1,10 +1,11 @@
 version: 1.0.{build}
 image: Visual Studio 2017
 build_script:
-- cmd: >-
+ - echo %appveyor_build_version%
+ - type code.zip
+ - cmd: >-
     npm install
-    echo %appveyor_build_version%
-    type code.zip
+ - echo %appveyor_build_version%  
 # artifacts:
 # - path: /deploy
 #   name: code
