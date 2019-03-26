@@ -7,11 +7,12 @@ build_script:
     npm install
 #  - echo %appveyor_build_version%  
 artifacts:
-- path: \/
+- path: /
 
 deploy:
 - provider: Environment
   name: test
-  artifact: code.zip
+#   artifact: code.zip
+  
   on:
     branch: master
