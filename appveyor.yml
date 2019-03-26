@@ -8,7 +8,7 @@ build_script:
 #  - echo %appveyor_build_version%  
 artifacts:
 # - path: code.zip
-- name: code
+ - name: code
 
 deploy:
 - provider: Environment
