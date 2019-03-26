@@ -6,15 +6,13 @@ build_script:
  - cmd: >-
     npm install
 #  - echo %appveyor_build_version%  
-# artifacts:
-# - path: /deploy
-#   name: code
+artifacts:
+- path: /
+  name: code
 
 deploy:
 - provider: Environment
   name: test
-  artifacts:
-    - path: /
-    - name: code
+  artifact: code.zip
   on:
     branch: master
